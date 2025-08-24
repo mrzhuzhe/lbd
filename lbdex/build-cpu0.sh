@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 LLVM_DIR=../llvm-project/debug
 CUR_DIR=/home/sanszhu/code/code/lbd/lbdex
-LLVM_TEST_DIR=../llvm-project/test
+LLVM_TEST_DIR=../temp_llvm/test
 if ! test -d ${LLVM_TEST_DIR}; then
   mkdir ${LLVM_TEST_DIR}
   cd ${LLVM_TEST_DIR}

@@ -48,3 +48,12 @@ tools/lld
 # Sphinx build tree, if building in-source dir.
 docs/_build
 temp_llvm
+lbdex/chapters
+lbdex/preprocess
+lbdex/input/ch8_2_select_global_pic.bc
+lbdex/input/ch8_2_select_global_pic.cpu0.o
+lbdex/input/ch_run_backend.bc
+lbdex/input/ch_run_backend.cpu0.o
+lbdex/tmp.txt
+lbdex/verilog/cpu0.config
+lbdex/verilog/cpu0.hex

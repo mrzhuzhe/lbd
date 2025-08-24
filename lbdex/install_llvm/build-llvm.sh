@@ -54,3 +54,8 @@ build_llvm
 popd
 #echo "Please remember to add ${LLVM_DEBUG_DIR}/build/bin to variable \${PATH} to your \
 #  environment for clang++, clang."
+
+
+cmake -DCMAKE_BUILD_TYPE=Debug -DLLVM_ENABLE_PROJECTS="clang" \
+    -DLLVM_OPTIMIZED_TABLEGEN=On \
+    -DLLVM_PARALLEL_COMPILE_JOBS=8 -DLLVM_PARALLEL_LINK_JOBS=1 ../llvm

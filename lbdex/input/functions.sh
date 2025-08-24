@@ -15,8 +15,8 @@ prologue() {
   OS=`uname -s`
   echo "OS =" ${OS}
 
-  TOOLDIR=~/llvm/test/build/bin
-  CLANG=~/llvm/test/build/bin/clang
+  TOOLDIR=/home/sanszhu/code/code/lbd/temp_llvm/test/build/bin
+  CLANG=/home/sanszhu/code/code/lbd/temp_llvm/test/build/bin/clang
 
   CPU=$CPU
   echo "CPU =" "${CPU}"
