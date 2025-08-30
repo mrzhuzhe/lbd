@@ -57,3 +57,5 @@ lbdex/input/ch_run_backend.cpu0.o
 lbdex/tmp.txt
 lbdex/verilog/cpu0.config
 lbdex/verilog/cpu0.hex
+lbdex/verilog/cpu0IIs
+lbdex/verilog/cpu0Is
