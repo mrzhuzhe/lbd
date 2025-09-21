@@ -20,10 +20,12 @@ LLVM_DEBUG_DIR=${LLVM_DIR}/debug
 # ${LLVM_DEBUG_DIR}/build: build with clang and compiler-rt, -DLLVM_ENABLE_PROJECTS="clang;compiler-rt" --> ref. https://github.com/Jonathan2251/lbd/blob/master/lbdex/install_llvm/build-llvm.sh
 
 build() {
-  cmake -DCMAKE_C_COMPILER=$(pwd)/../debug/build/bin/clang -C../test-suite/cmake/caches/O3.cmake -DCMAKE_C_FLAGS=-fPIE -DCMAKE_CXX_FLAGS=-fPIE ../test-suite
+  cmake -DCMAKE_C_COMPILER=$(pwd)/../debug/build/bin/clang -C../llvm-test-suite/cmake/caches/O3.cmake -DCMAKE_C_FLAGS=-fPIE -DCMAKE_CXX_FLAGS=-fPIE ../llvm-test-suite
   make
 }
 
 
-cd ${LLVM_TEST_SUITE_DIR}
+mkdir test-suite-build
+cd test-suite-build
+
 build
